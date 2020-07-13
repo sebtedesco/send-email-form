@@ -1,6 +1,6 @@
 # Email Contact Form
 
-*Under Construction* A Contact form that allows you to fill out your contact info as well as write a message and send to my inbox.
+*Under Construction - A Contact form that allows you to fill out your contact info as well as write a message and send to my inbox.
 
 ## Live
 
