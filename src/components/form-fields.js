@@ -71,6 +71,8 @@ export default class FormFields extends React.Component {
           });
         }
         break;
+        default:
+          console.log('Input field name is not valid.')
     }
     this.setState({ errors }, () => {
       this.errorFree();

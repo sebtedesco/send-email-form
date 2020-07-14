@@ -4,19 +4,19 @@ import FormFields from './components/form-fields';
 import NavBar from './components/nav-bar';
 import Container from "@material-ui/core/Container";
 import CssBaseline from "@material-ui/core/CssBaseline";
+import $ from 'jquery';
 
 
 
 export default class App extends React.Component {
 
   sendEmail(data){
-    e.preventDefault();
-    var URL = "https://1i2240h2ug.execute-api.us-east-1.amazonaws.com/test";
+    // var URL = "https://1i2240h2ug.execute-api.us-east-1.amazonaws.com/test";
 
     var fullName = data.fullName;
     var email = data.email;
     var message = data.message;
-    var data = {
+    var messageData = {
       name: fullName,
       email: email,
       message: message,
@@ -28,18 +28,18 @@ export default class App extends React.Component {
       crossDomain: "true",
       dataType: "json",
       contentType: "application/json; charset=utf-8",
-      data: JSON.stringify(data),
+      data: JSON.stringify(messageData),
 
       success: function () {
         // clear form and show a success message
         alert("Successfull");
         document.getElementById("contact-form").reset();
-        location.reload();
+        // location.reload();
       },
       error: function () {
         // show an error message
         alert("UnSuccessfull");
-      },
+      }
     });
   }
 
