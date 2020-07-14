@@ -11,7 +11,6 @@ import $ from 'jquery';
 export default class App extends React.Component {
 
   sendEmail(data){
-    // var URL = "https://1i2240h2ug.execute-api.us-east-1.amazonaws.com/test";
 
     var fullName = data.fullName;
     var email = data.email;
@@ -24,7 +23,7 @@ export default class App extends React.Component {
 
     $.ajax({
       type: "POST",
-      url: "https://1i2240h2ug.execute-api.us-east-1.amazonaws.com/test",
+      url: "https://7nz2am5kv2.execute-api.us-east-1.amazonaws.com/prod",
       crossDomain: "true",
       dataType: "json",
       contentType: "application/json; charset=utf-8",
@@ -34,12 +33,11 @@ export default class App extends React.Component {
         // clear form and show a success message
         alert("Successfull");
         document.getElementById("contact-form").reset();
-        // location.reload();
       },
       error: function () {
         // show an error message
         alert("UnSuccessfull");
-      }
+      },
     });
   }
 
