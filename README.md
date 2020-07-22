@@ -8,7 +8,7 @@ http://stedesco-contact-form.s3-website-us-east-1.amazonaws.com/
 
 ## Technologies Used
 
-HTML5, CSS3, JavaScript (ES5/ES6), jQuery, React JS, Material UI, AWS, Lambda, DynamoDB, API Gateway, Regex
+HTML5, CSS3, JavaScript (ES6), jQuery, React JS, Material UI, AWS, Lambda, DynamoDB, API Gateway, Regex
 
 ## Features
 - User can enter name
